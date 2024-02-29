@@ -177,7 +177,7 @@ public class TaskIO {
 
         int[] timeEntities = new int[]{days, hours, minutes, seconds};
         int i = 0, j = timeEntities.length-1;// positions of timeEntities available
-        while (i != 1 && j != 1) {
+        while ((i != 1 && j != 1) && i <= j) {
             if (timeEntities[i] == 0) i++;
             if (timeEntities[j] == 0) j--;
         }
@@ -274,7 +274,7 @@ public class TaskIO {
 
         int[] time = new int[]{days, hours, minutes, seconds};
         int i = 0, j = time.length-1;
-        while (time[i] == 0 || time[j] == 0){
+        while ((time[i] == 0 || time[j] == 0) && i <= j){
             if (time[i] == 0) i++;
             if (time[j] == 0) j--;
         }

@@ -6,6 +6,8 @@ import org.apache.log4j.Logger;
 
 import java.util.*;
 
+import static java.util.Objects.isNull;
+
 public class ArrayTaskList extends TaskList{
 
     private Task[] tasks;
@@ -52,7 +54,7 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public void add(Task task){
-        if (task.equals(null)) throw new NullPointerException("Task shouldn't be null");
+        if (isNull(task)) throw new NullPointerException("Task shouldn't be null");
         if (numberOfTasks == currentCapacity-1){
             currentCapacity = currentCapacity * 2;
             Task[] withAddedTask = new Task[currentCapacity];
@@ -96,10 +98,10 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public List<Task> getAll() {
-        ArrayList<Task> tks=new ArrayList<>();
+        ArrayList<Task> tasks=new ArrayList<>();
         for (int i=0; i<this.numberOfTasks;i++)
-            tks.add(this.tasks[i]);
-        return tks;
+            tasks.add(this.tasks[i]);
+        return tasks;
     }
 
     @Override
@@ -112,7 +114,7 @@ public class ArrayTaskList extends TaskList{
         if (numberOfTasks != that.numberOfTasks) return false;
         int i = 0;
         for (Task a : this){
-            if (!a.equals(((ArrayTaskList) o).getTask(i))){
+            if (!a.equals(that.getTask(i))){
                 return false;
             }
             i++;
