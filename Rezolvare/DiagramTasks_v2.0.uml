@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JIGSAW</ID>
+  <OriginalElement>tasks</OriginalElement>
+  <nodes>
+    <node x="137.0" y="106.0">log4j</node>
+    <node x="-105.0" y="-14.0">tasks</node>
+    <node x="88.0" y="386.0">javafx.media</node>
+    <node x="-72.5" y="166.0">org.controlsfx.controls</node>
+    <node x="92.5" y="666.0">javafx.base</node>
+    <node x="-62.5" y="546.0">javafx.graphics</node>
+    <node x="-105.5" y="386.0">javafx.fxml</node>
+    <node x="-21.0" y="326.0">javafx.controls</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="javafx.controls" target="tasks" relationship="REQUIRES">
+      <point x="-37.0" y="-14.0" />
+      <point x="16.0" y="300.0" />
+      <point x="-107.0" y="300.0" />
+      <point x="-107.0" y="80.0" />
+      <point x="-67.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.base" target="javafx.graphics" relationship="REQUIRES_TRANSITIVE">
+      <point x="-30.25" y="-14.0" />
+      <point x="122.75" y="640.0" />
+      <point x="113.0" y="640.0" />
+      <point x="113.0" y="600.0" />
+      <point x="13.0" y="600.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.fxml" target="tasks" relationship="REQUIRES">
+      <point x="0.0" y="-14.0" />
+      <point x="-47.0" y="360.0" />
+      <point x="-147.0" y="360.0" />
+      <point x="-147.0" y="80.0" />
+      <point x="-67.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.media" target="org.controlsfx.controls" relationship="REQUIRES_STATIC">
+      <point x="0.0" y="-14.0" />
+      <point x="153.0" y="260.0" />
+      <point x="33.0" y="260.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.base" target="javafx.controls" relationship="REQUIRES_TRANSITIVE">
+      <point x="-30.25" y="-14.0" />
+      <point x="122.75" y="640.0" />
+      <point x="113.0" y="640.0" />
+      <point x="113.0" y="460.0" />
+      <point x="53.0" y="460.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.base" target="javafx.media" relationship="REQUIRES_TRANSITIVE">
+      <point x="-30.25" y="-14.0" />
+      <point x="122.75" y="640.0" />
+      <point x="113.0" y="640.0" />
+      <point x="113.0" y="600.0" />
+      <point x="153.0" y="600.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.base" target="org.controlsfx.controls" relationship="REQUIRES">
+      <point x="30.25" y="-14.0" />
+      <point x="183.25" y="640.0" />
+      <point x="233.0" y="640.0" />
+      <point x="233.0" y="240.0" />
+      <point x="103.33333333333334" y="240.0" />
+      <point x="70.33333333333334" y="14.0" />
+    </edge>
+    <edge source="javafx.controls" target="org.controlsfx.controls" relationship="REQUIRES_TRANSITIVE">
+      <point x="37.0" y="-14.0" />
+      <point x="90.0" y="280.0" />
+      <point x="-37.33333333333334" y="280.0" />
+      <point x="-70.33333333333334" y="14.0" />
+    </edge>
+    <edge source="javafx.graphics" target="javafx.media" relationship="REQUIRES_TRANSITIVE">
+      <point x="37.75" y="-14.0" />
+      <point x="50.75" y="520.0" />
+      <point x="93.0" y="520.0" />
+      <point x="93.0" y="480.0" />
+      <point x="153.0" y="480.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.graphics" target="javafx.controls" relationship="REQUIRES_TRANSITIVE">
+      <point x="37.75" y="-14.0" />
+      <point x="50.75" y="520.0" />
+      <point x="93.0" y="520.0" />
+      <point x="93.0" y="500.0" />
+      <point x="53.0" y="500.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.graphics" target="javafx.fxml" relationship="REQUIRES">
+      <point x="-37.75" y="-14.0" />
+      <point x="-24.75" y="520.0" />
+      <point x="-17.75" y="520.0" />
+      <point x="29.25" y="14.0" />
+    </edge>
+    <edge source="log4j" target="tasks" relationship="REQUIRES">
+      <point x="0.0" y="-14.0" />
+      <point x="173.0" y="80.0" />
+      <point x="-67.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+    <edge source="javafx.base" target="javafx.fxml" relationship="REQUIRES_TRANSITIVE">
+      <point x="-30.25" y="-14.0" />
+      <point x="122.75" y="640.0" />
+      <point x="113.0" y="640.0" />
+      <point x="113.0" y="600.0" />
+      <point x="-87.0" y="600.0" />
+      <point x="-87.0" y="520.0" />
+      <point x="-76.25" y="520.0" />
+      <point x="-29.25" y="14.0" />
+    </edge>
+    <edge source="org.controlsfx.controls" target="tasks" relationship="REQUIRES">
+      <point x="0.0" y="-14.0" />
+      <point x="33.0" y="80.0" />
+      <point x="-67.0" y="80.0" />
+      <point x="0.0" y="14.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="43.0" y="340.0" />
+  <SelectedNodes>
+    <node>tasks</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+</Diagram>
+
