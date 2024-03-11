@@ -142,4 +142,4 @@ public ArrayTaskList(ArrayTaskList original) {
         this.currentCapacity = original.currentCapacity;
         this.tasks = Arrays.copyOf(original.tasks, original.tasks.length);
     }
-}a
+}
