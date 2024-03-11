@@ -6,8 +6,6 @@ import org.apache.log4j.Logger;
 
 import java.util.*;
 
-import static java.util.Objects.isNull;
-
 public class ArrayTaskList extends TaskList{
 
     private Task[] tasks;
@@ -54,7 +52,7 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public void add(Task task){
-        if (isNull(task)) throw new NullPointerException("Task shouldn't be null");
+        if (task == null) throw new NullPointerException("Task shouldn't be null");
         if (numberOfTasks == currentCapacity-1){
             currentCapacity = currentCapacity * 2;
             Task[] withAddedTask = new Task[currentCapacity];
@@ -98,10 +96,10 @@ public class ArrayTaskList extends TaskList{
 
     @Override
     public List<Task> getAll() {
-        ArrayList<Task> tasks=new ArrayList<>();
+        ArrayList<Task> tks=new ArrayList<>();
         for (int i=0; i<this.numberOfTasks;i++)
-            tasks.add(this.tasks[i]);
-        return tasks;
+            tks.add(this.tasks[i]);
+        return tks;
     }
 
     @Override
@@ -114,7 +112,7 @@ public class ArrayTaskList extends TaskList{
         if (numberOfTasks != that.numberOfTasks) return false;
         int i = 0;
         for (Task a : this){
-            if (!a.equals(that.getTask(i))){
+            if (!a.equals(((ArrayTaskList) o).getTask(i))){
                 return false;
             }
             i++;
@@ -138,13 +136,10 @@ public class ArrayTaskList extends TaskList{
                 ", currentCapacity=" + currentCapacity +
                 '}';
     }
-    @Override
-    protected ArrayTaskList clone() throws CloneNotSupportedException {
-        ArrayTaskList tasks = new ArrayTaskList();
-        for (int i = 0; i < this.tasks.length; i++){
-            tasks.add(this.getTask(i));
-        }
-        return tasks;
 
+public ArrayTaskList(ArrayTaskList original) {
+        this.numberOfTasks = original.numberOfTasks;
+        this.currentCapacity = original.currentCapacity;
+        this.tasks = Arrays.copyOf(original.tasks, original.tasks.length);
     }
 }
