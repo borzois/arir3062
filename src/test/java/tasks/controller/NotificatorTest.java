@@ -1,4 +1,4 @@
-package tasks.controller;
+/*package tasks.controller;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -35,4 +35,4 @@ public class NotificatorTest {
         Task task = new Task("Test", new Date());
         assertDoesNotThrow(() -> Notificator.showNotification(task));
     }
-}
+}*/

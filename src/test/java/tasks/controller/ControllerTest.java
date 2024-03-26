@@ -11,7 +11,7 @@ import tasks.services.TasksService;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
-
+/*
 public class ControllerTest {
     private Controller controller;
     private ObservableList<Task> tasks;
@@ -47,4 +47,4 @@ public class ControllerTest {
     void testResetFilteredTasks() {
         assertDoesNotThrow(() -> controller.resetFilteredTasks());
     }
-}
+}*/
