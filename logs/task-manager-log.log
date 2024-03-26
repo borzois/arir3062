@@ -27,3 +27,14 @@
 2024-02-29 17:48:41 INFO  Main:35 - saved data reading
 2024-02-29 17:48:41 INFO  Main:40 - application start
 2024-02-29 17:48:42 INFO  Controller:74 - Main controller initializing
+2024-03-12 14:17:47 INFO  Main:35 - saved data reading
+2024-03-12 14:17:47 ERROR TaskIO:82 - IO exception reading or writing file
+2024-03-12 14:17:47 INFO  Main:40 - application start
+2024-03-12 14:17:47 INFO  Controller:74 - Main controller initializing
+2024-03-12 14:18:16 INFO  Main:35 - saved data reading
+2024-03-12 14:18:16 ERROR TaskIO:82 - IO exception reading or writing file
+2024-03-12 14:18:16 INFO  Main:40 - application start
+2024-03-12 14:18:16 INFO  Controller:74 - Main controller initializing
+2024-03-12 14:18:30 INFO  NewEditController:89 - new/edit window initializing
+2024-03-26 13:22:49 INFO  Notificator:62 - push notification showing
+2024-03-26 13:22:49 ERROR Notificator:56 - thread interrupted exception
