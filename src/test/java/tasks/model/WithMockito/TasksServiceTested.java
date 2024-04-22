@@ -1,4 +1,4 @@
-package tasks.services.WithMockito;
+package tasks.model.WithMockito;
 
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
