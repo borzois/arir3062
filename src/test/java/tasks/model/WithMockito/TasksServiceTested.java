@@ -9,7 +9,6 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class TasksServiceTested {
-
     @Test
     public void testGetIntervalInHoursOneHour() {
         Task task = Mockito.mock(Task.class);
