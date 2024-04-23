@@ -12,13 +12,10 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ArrayTaskListTest {
     private ArrayTaskList taskList;
 
-    @BeforeEach
-    void setUp() {
-        taskList = new ArrayTaskList();
-    }
-
     @Test
     void testAdd() {
+        taskList = new ArrayTaskList();
+
         // Test case 1
         Task task1 = new Task("Task", new Date(10), new Date(15), 2);
         taskList.add(task1);
