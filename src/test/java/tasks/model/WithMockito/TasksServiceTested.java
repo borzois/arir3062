@@ -9,9 +9,8 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 public class TasksServiceTested {
-
     @Test
-    void testGetIntervalInHoursOneHour() {
+    public void testGetIntervalInHoursOneHour() {
         Task task = Mockito.mock(Task.class);
         when(task.getRepeatInterval()).thenReturn(3600); // 1 hour in seconds
 
@@ -22,7 +21,7 @@ public class TasksServiceTested {
     }
 
     @Test
-    void testGetIntervalInHoursTwoAndHalfHours() {
+    public void testGetIntervalInHoursTwoAndHalfHours() {
         Task task = Mockito.mock(Task.class);
         when(task.getRepeatInterval()).thenReturn(9000); // 2.5 hours in seconds
 
@@ -33,7 +32,7 @@ public class TasksServiceTested {
     }
 
     @Test
-    void testGetIntervalInHoursZeroHours() {
+    public void testGetIntervalInHoursZeroHours() {
         Task task = Mockito.mock(Task.class);
         when(task.getRepeatInterval()).thenReturn(0); // 0 hours in seconds
 
