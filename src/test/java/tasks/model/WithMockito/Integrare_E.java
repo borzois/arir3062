@@ -12,7 +12,7 @@ import static org.mockito.Mockito.*;
 public class Integrare_E {
 
     @Test
-    void testAddTaskAndGetSize() {
+    public void testAddTaskAndGetSize() {
         ArrayTaskList list = new ArrayTaskList();
         TasksService service = new TasksService(list);
 
@@ -24,7 +24,7 @@ public class Integrare_E {
     }
 
     @Test
-    void testAddTaskAndGetSizeAddNull() {
+    public void testAddTaskAndGetSizeAddNull() {
         ArrayTaskList list = new ArrayTaskList();
         TasksService service = new TasksService(list);
 
@@ -43,7 +43,7 @@ public class Integrare_E {
     }
 
     @Test
-    void testGetIntervalInHours() {
+    public void testGetIntervalInHours() {
         ArrayTaskList list = new ArrayTaskList();
         TasksService service = new TasksService(list);
 
@@ -56,7 +56,7 @@ public class Integrare_E {
         assertEquals("01:00", interval);
     }
     @Test
-    void testGetIntervalInHours2() {
+    public void testGetIntervalInHours2() {
         ArrayTaskList list = new ArrayTaskList();
         TasksService service = new TasksService(list);
 
