@@ -8,7 +8,7 @@ import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class TaskTested {
+public class TaskTested {
 
     @Test
     void testSetTitle() throws ParseException {

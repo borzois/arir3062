@@ -8,7 +8,7 @@ import tasks.services.TasksService;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class TasksServiceTested {
+public class TasksServiceTested {
 
     @Test
     void testGetIntervalInHoursOneHour() {

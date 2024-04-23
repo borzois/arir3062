@@ -10,10 +10,10 @@ import java.util.Date;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-class ArrayTaskListTested {
+public class ArrayTaskListTested {
 
     @Test
-    void testAddNonNullTask() {
+    public void testAddNonNullTask() {
         ArrayTaskList list = new ArrayTaskList();
         Task task = Mockito.mock(Task.class);
         list.add(task);
@@ -22,13 +22,13 @@ class ArrayTaskListTested {
     }
 
     @Test
-    void testAddNullTask() {
+    public void testAddNullTask() {
         ArrayTaskList list = new ArrayTaskList();
         assertThrows(NullPointerException.class, () -> list.add(null));
     }
 
     @Test
-    void testAddTaskWhenArrayIsFull() {
+    public void testAddTaskWhenArrayIsFull() {
         ArrayTaskList list = new ArrayTaskList();
         for (int i = 0; i < 10; i++) {
             Task task = Mockito.mock(Task.class);

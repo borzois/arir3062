@@ -13,7 +13,7 @@ public class ArrayTaskListTest {
     private ArrayTaskList taskList;
 
     @Test
-    void testAdd() {
+    public void testAdd() {
         taskList = new ArrayTaskList();
 
         // Test case 1
